@@ -1,9 +1,9 @@
-# class Fish:
-#     def swim(self) :
-#         print("moving in water")
+class Fish:
+    def swim(self) :
+        print("moving in water")
 
 
-# marlin = Fish()
-# marlin.swim()
+marlin = Fish()
+marlin.swim()
 
-print("hello world")
+# print("hello world")
