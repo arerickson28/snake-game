@@ -6,4 +6,3 @@ class Fish:
 marlin = Fish()
 marlin.swim()
 
-print("hello world")
