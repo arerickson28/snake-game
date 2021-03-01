@@ -46,9 +46,19 @@ while game_is_on :
 
 
     #detect collision with wall
-    if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290 :
+    if snake.head.xcor() > 295 or snake.head.xcor() < -295 or snake.head.ycor() > 295 or snake.head.ycor() < -295 :
         game_is_on = False
         scoreboard.game_over()
+
+    #detect collision with tail
+    for turtle_seg in snake.turtle_snake :
+        if turtle_seg == snake.head :
+            pass
+        elif snake.head.distance(turtle_seg) < 10 :
+            game_is_on = False
+            scoreboard.game_over()
+
+
 
 
 screen.exitonclick()
