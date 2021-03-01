@@ -20,9 +20,10 @@ screen.bgcolor("black")
 screen.title("Snake Game!")
 screen.tracer(0)
 
+scoreboard = Scoreboard()
 snake = Snake()
 food = Food()
-scoreboard = Scoreboard()
+
 
 screen.listen()
 screen.onkey(snake.up,"Up")
